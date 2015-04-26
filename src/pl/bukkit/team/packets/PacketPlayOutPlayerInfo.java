@@ -6,9 +6,9 @@ import pl.bukkit.team.protocols.TinyProtocol;
 
 public class PacketPlayOutPlayerInfo extends AbstractPacket {
 	
-	private static final Object handle = Reflection.getConstructor("{nms}.PacketPlayOutPlayerInfo").invoke();
+private static final Object handle = Reflection.getConstructor("{nms}.PacketPlayOutPlayerInfo").invoke();
 	
-	public PacketPlayOutPlayerInfo() { super(handle, Main.getTinyProtocol());}
+public PacketPlayOutPlayerInfo() { super(handle, Main.getTinyProtocol());}
     
     public PacketPlayOutPlayerInfo(Object packet,TinyProtocol tinyprotocol) { super(packet, tinyprotocol); }
 
