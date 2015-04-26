@@ -12,7 +12,6 @@ public class PacketPlayOutPlayerInfo extends AbstractPacket {
     
     public PacketPlayOutPlayerInfo(Object packet,TinyProtocol tinyprotocol) { super(packet, tinyprotocol); }
 
-	
     public String getPlayerName() { return (String) Reflection.getMethod(packet.getClass(), "a").invoke(packet); }
     
     public void setPlayerName(String value) { Reflection.getField(packet.getClass(), "a", String.class).set(packet, value); }
