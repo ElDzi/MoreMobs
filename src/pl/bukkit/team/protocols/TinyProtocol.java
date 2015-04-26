@@ -29,7 +29,7 @@ import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.server.PluginDisableEvent;
 import org.bukkit.plugin.Plugin;
 
-import com.gmail.zahusek.protocol.Reflection.*;
+import pl.bukkit.team.protocols.Reflection.*;
 import com.google.common.collect.Lists;
 import com.google.common.collect.MapMaker;
 
