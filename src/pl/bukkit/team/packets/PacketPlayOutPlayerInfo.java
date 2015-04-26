@@ -25,5 +25,4 @@ public class PacketPlayOutPlayerInfo extends AbstractPacket {
     public void setPing(int value) { Reflection.getField(packet.getClass(), "c", int.class).set(packet, value); }
     
     public void setPacket(String value1, boolean value2, int value3) {setPlayerName(value1); setOnline(value2); setPing(value3);}
-
 }
